@@ -1,4 +1,4 @@
-package design.pattern;
+package com.design.pattern;
 
 
 class DesignpatternserverApplicationTests {
