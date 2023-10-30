@@ -3,7 +3,7 @@ package com.design.pattern.designPatterns.structuralDesignPattern;
 /*
      Bridge Pattern provides more flexibility of combination , here instead making 4 diff implementation combination
      like instead making 4 seperate SquareBlue , SquareRed , CircleBlue , CircleRed class and defining draw()
-     we just defined 3 functions - 2 color , 1 draw
+     we just defined 2 functions - 1 applyColor() , 1 draw()
 
      How to achieve :- Bridge Pattern says , whenever there in diff kind of common functionality then break it into seperate
      group or interface . Like here Shape and Color
