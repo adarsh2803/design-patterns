@@ -1,5 +1,10 @@
 package com.design.pattern.designPatterns.structuralDesignPattern;
 
+/*
+        Proxy design design pattern is used when you want to filter the request based on ips ,
+        implement a caching system , lazing loading . instead of giving real object , give the proxy object
+ */
+
 interface Image {
     void display();
 }
