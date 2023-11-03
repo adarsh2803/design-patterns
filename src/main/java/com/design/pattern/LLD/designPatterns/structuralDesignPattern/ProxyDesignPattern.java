@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.structuralDesignPattern;
+package com.design.pattern.LLD.designPatterns.structuralDesignPattern;
 
 /*
         Proxy design design pattern is used when you want to filter the request based on ips ,

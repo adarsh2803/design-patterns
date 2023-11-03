@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.structuralDesignPattern;
+package com.design.pattern.LLD.designPatterns.structuralDesignPattern;
 
 /*
     Adapter Pattern is used when you want a legacy class to be compatible with incompatible interface.

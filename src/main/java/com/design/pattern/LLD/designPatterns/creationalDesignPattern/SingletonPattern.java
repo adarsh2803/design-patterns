@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.creationalDesignPattern;
+package com.design.pattern.LLD.designPatterns.creationalDesignPattern;
 
 /*
     Singleton Design Pattern is used when you want only 1 instance of this class ,

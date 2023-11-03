@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.creationalDesignPattern;
+package com.design.pattern.LLD.designPatterns.creationalDesignPattern;
 
 /*
     Abstract Factory Pattern is used to maintain consistency in the design (methods/functions) of the objects

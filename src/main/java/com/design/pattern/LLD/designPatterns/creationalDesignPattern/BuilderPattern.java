@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.creationalDesignPattern;
+package com.design.pattern.LLD.designPatterns.creationalDesignPattern;
 
 /*
     Builder Pattern is used to create a complex object step by step .. conventionally in constructor , you need to remember

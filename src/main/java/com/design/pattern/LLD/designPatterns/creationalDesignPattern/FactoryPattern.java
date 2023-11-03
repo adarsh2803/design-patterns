@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.creationalDesignPattern;
+package com.design.pattern.LLD.designPatterns.creationalDesignPattern;
 
 /*
     Factory Design Pattern is used to create objects without specifying the exact class of object

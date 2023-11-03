@@ -1,4 +1,4 @@
-package com.design.pattern.designPatterns.structuralDesignPattern;
+package com.design.pattern.LLD.designPatterns.structuralDesignPattern;
 
 /*
      Bridge Pattern provides more flexibility of combination , here instead making 4 diff implementation combination

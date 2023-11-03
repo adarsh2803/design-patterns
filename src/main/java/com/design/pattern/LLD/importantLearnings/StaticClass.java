@@ -1,4 +1,4 @@
-package com.design.pattern.importantLearnings;
+package com.design.pattern.LLD.importantLearnings;
 
 /*
     Outer class cannot be static , only inner class can be made static

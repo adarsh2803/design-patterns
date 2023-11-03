@@ -1,14 +1,14 @@
-package com.design.pattern.designPatterns.creationalDesignPattern;
+package com.design.pattern.LLD.importantLearnings;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /*
-    Prototype Design Pattern is used when object is initializion is time and resource intensive .
-    ie. fetching data from DataBase for initializing object
+    When you implements cloneable , then it do shallow copy ..
+    to make deep copy you need to make a customClone function
  */
 
-class BookShop implements Cloneable {
+class BookShop implements Cloneable{
     private String storeName;
     private List<String> bookNames = new ArrayList<>();
 
@@ -28,13 +28,18 @@ class BookShop implements Cloneable {
         this.bookNames = bookNames;
     }
 
-    //This load data is copying data from DataBase
-    public void loadBooks(){
-        for(int i=0;i<10;i++){
-            getBookNames().add("Book"+i);
-        }
+    //This will make a shallow copy of Object
+    @Override
+    public BookShop clone() throws CloneNotSupportedException {
+        BookShop clone = (BookShop) super.clone();
+        return clone;
     }
 
+    public void loadBooks(){
+        for(int i=0;i<10;i++){
+            this.getBookNames().add("Book"+i);
+        }
+    }
 
     @Override
     public String toString() {
@@ -43,18 +48,12 @@ class BookShop implements Cloneable {
                 ", bookNames=" + bookNames +
                 '}';
     }
-
-    //Custom clone function which make a deep copy of object , here we will copy object step by step
-    @Override
-    public BookShop clone() {
-        BookShop bookShop = new BookShop();
-        bookShop.getBookNames().addAll(this.getBookNames());
-        return bookShop;
-    }
 }
 
-public class PrototypeDesignPattern {
-    public static void main(String[] args) {
+
+
+public class ShallowCopyPrototypeDesign {
+    public static void main(String[] args) throws CloneNotSupportedException {
         BookShop shop = new BookShop();
         shop.setStoreName("Store 1");
         shop.loadBooks();
@@ -66,6 +65,5 @@ public class PrototypeDesignPattern {
         shop.getBookNames().remove(1);
         System.out.println(shop);
         System.out.println(cloneShop);
-
     }
 }
