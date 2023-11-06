@@ -26,8 +26,12 @@ public class MicroServiceDesignPattern {
               in 1 DB . So , in 1 DB it is easy to stop/place order , but in microservice 2 DB so if transaction fails
               in any 1 DB , then you have to roll back the entire request in both DBs.
 
-
-        4.
+        4. Different Phases of Microservices :- ALWAYS THINK IN THIS WAY
+           1. Decomposition :- Decompose by Business logic or decompose by subdomain
+           2. DataBase :- DataBase per Service or Shared Common DataBase
+           3. Communication :- API or Events
+           4. Integration :- How to integrate this microservice with UIs ex-> API gateways
+           5. Deployment & Monitoring :- Jenkins , Docker , Grafana
 
 
      */
