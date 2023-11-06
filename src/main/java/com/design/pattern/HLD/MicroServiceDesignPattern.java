@@ -62,22 +62,22 @@ public class MicroServiceDesignPattern {
               table then it is possible it might break other table.
            What is good in Shared DBs
            1. Easy to join any no. of tables
-           2. Transactional property handling is easy , maintaining DB's ACID propeties is easy . If any insertion
+           2. Transactional property handling is easy , maintaining DB's ACID properties is easy . If any insertion
               in 1 table get fail then it will roll back insertions in prev transaction .
 
-           6.1 Whats good in Shared DB is challenges in Databases for each service
+           6.1 What's good in Shared DB is challenges in Databases for each service
            SAGA solves the combined transaction property over distributed DB . In 1 DB local txn / rollback is easy ,
            but in distributed system  combined txn / rollback is a challenge which SAGA solves .
            CQRS solves the joining of tables in distributed DB system .
 
        7. SAGA Pattern - Simple API for Global Action .
            It is a event based approach to solve transaction property (ACID) of distributed systems.
-           Suppose req1 touch 3 service's DB - s1,s2,s3 . So , once s1 DB txn is complete it will give
+           Suppose req1 touch 3 services DB - s1,s2,s3 . So , once s1 DB txn is complete it will give
            event to s2 when s2 DB txn is complete then event is published for s3 . if suppose s3 transaction
-           fails then it give a event to rollback txn in s2 then s2 will send to s1 .
+           fails then it gives a event to rollback txn in s2 then s2 will send to s1 .
            EX:-SAGA is implemented using choreography - series of events or by orchestrator (who do the same)
            orchestrator is a centralised system .
-           ** API is interface (way to intract) for application , it is not limited to req-res interaction ,
+           ** API is interface (way to interact) for application , it is not limited to req-res interaction ,
            it can be event driven also .
 
       8. CQRS Pattern- Command (CUD) Query(R) Request Segregation . R= Select Query
